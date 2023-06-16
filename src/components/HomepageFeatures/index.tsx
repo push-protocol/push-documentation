@@ -5,20 +5,21 @@ import ArrowUp from "@site/static/img/ArrowUpRight-pink.svg"
 import Styles from "./styles.module.css"
 import FAQ from './Faq';
 import { FooterComponent } from './Footer';
+import Link from '@docusaurus/Link';
 
 type DevGuideItems = {
   title: string;
   Svg: React.ComponentType<React.ComponentProps<'svg'>>;
   description: JSX.Element;
   PinkSvg?: React.ComponentType<React.ComponentProps<'svg'>>;
-  Link?: string;
+  link?: string;
 };
 
 type SdkListItems = {
   title: string;
   Svg: React.ComponentType<React.ComponentProps<'svg'>>;
   PinkSvg?: React.ComponentType<React.ComponentProps<'svg'>>;
-  Link?: string;
+  link?: string;
 }
 
 const SdkList: SdkListItems[] = [
@@ -26,31 +27,37 @@ const SdkList: SdkListItems[] = [
     title: 'SDK Starter Kit',
     Svg: require('@site/static/img/arrowupright.svg').default,
     PinkSvg: require('@site/static/img/ArrowUpRight-pink.svg').default,
+    link: '/docs/CONCEPTS/push-chat-for-web3',
   },
   {
     title: 'REST API',
     Svg: require('@site/static/img/arrowupright.svg').default,
     PinkSvg: require('@site/static/img/ArrowUpRight-pink.svg').default,
+    link: '/docs/CONCEPTS/push-chat-for-web3',
   },
   {
     title: 'React Native',
     Svg: require('@site/static/img/arrowupright.svg').default,
     PinkSvg: require('@site/static/img/ArrowUpRight-pink.svg').default,
+    link: '/docs/CONCEPTS/push-chat-for-web3',
   },
   {
     title: 'Socket',
     Svg: require('@site/static/img/arrowupright.svg').default,
     PinkSvg: require('@site/static/img/ArrowUpRight-pink.svg').default,
+    link: '/docs/CONCEPTS/push-chat-for-web3',
   },
   {
     title: 'UIWeb',
     Svg: require('@site/static/img/arrowupright.svg').default,
     PinkSvg: require('@site/static/img/ArrowUpRight-pink.svg').default,
+    link: '/docs/CONCEPTS/push-chat-for-web3',
   },
   {
     title: 'UI Embed',
     Svg: require('@site/static/img/arrowupright.svg').default,
     PinkSvg: require('@site/static/img/ArrowUpRight-pink.svg').default,
+    link: '/docs/CONCEPTS/push-chat-for-web3',
   }
 ]
 
@@ -59,7 +66,7 @@ const DevGuide: DevGuideItems[] = [
     title: 'Notifications',
     Svg: require('@site/static/img/notification.svg').default,
     PinkSvg: require('@site/static/img/notification-pink.svg').default,
-    Link: '/docs/CONCEPTS/push-notifications-for-web3/',
+    link: '/docs/CONCEPTS/push-notifications-for-web3/',
     description: (
       <>
         Explore different ways of sending and receiving notifications and more.
@@ -70,7 +77,7 @@ const DevGuide: DevGuideItems[] = [
     title: 'Push Chat',
     Svg: require('@site/static/img/message.svg').default,
     PinkSvg: require('@site/static/img/message-pink.svg').default,
-    Link: '/docs/CONCEPTS/push-chat-for-web3',
+    link: '/docs/CONCEPTS/push-chat-for-web3',
     description: (
       <>
         Learn about the details of Push Chat and how to easily integrate it.
@@ -81,6 +88,7 @@ const DevGuide: DevGuideItems[] = [
     title: 'Push Video Calls',
     Svg: require('@site/static/img/video.svg').default,
     PinkSvg: require('@site/static/img/video-pink.svg').default,
+    link: '/docs/CONCEPTS/push-chat-for-web3',
 
     description: (
       <>
@@ -92,6 +100,7 @@ const DevGuide: DevGuideItems[] = [
     title: 'SDK Quick Start',
     Svg: require('@site/static/img/lightning.svg').default,
     PinkSvg: require('@site/static/img/lightning-pink.svg').default,
+    link: '/docs/CONCEPTS/push-chat-for-web3',
     description: (
       <>
         A super quick guide to get you started with Push SDK.
@@ -102,7 +111,7 @@ const DevGuide: DevGuideItems[] = [
     title: 'Examples',
     Svg: require('@site/static/img/star.svg').default,
     PinkSvg: require('@site/static/img/star-pink.svg').default,
-
+    link: '/docs/CONCEPTS/push-chat-for-web3',
     description: (
       <>
         Examples to showcase the power of Push Protocol’s communication stack.
@@ -113,7 +122,7 @@ const DevGuide: DevGuideItems[] = [
     title: 'Showrunners',
     Svg: require('@site/static/img/receive-notifs.svg').default,
     PinkSvg: require('@site/static/img/receive-notifs-pink.svg').default,
-
+    link: '/docs/CONCEPTS/push-chat-for-web3',
     description: (
       <>
         Showrunners Framework and how to boost your web3 communications.
@@ -122,7 +131,7 @@ const DevGuide: DevGuideItems[] = [
   },
 ];
 
-function GuideList({ title, Svg, description, PinkSvg, Link }: DevGuideItems) {
+function GuideList({ title, Svg, description, PinkSvg, link }: DevGuideItems) {
   const [isHovered, setIsHovered] = useState<boolean>(false);
 
   const handleMouseEnter = () => {
@@ -138,7 +147,7 @@ function GuideList({ title, Svg, description, PinkSvg, Link }: DevGuideItems) {
 
   return (
     <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className={`developer_guides_list ${isHovered ? 'border-pink' : ''}`}>
-      <a href={Link}>
+      <Link to={link} target='_blank'>
         <div className='inner-card'>
           <div className='card-details'>
             {isHovered ? (
@@ -151,12 +160,12 @@ function GuideList({ title, Svg, description, PinkSvg, Link }: DevGuideItems) {
             <p className="guide_info">{description}</p>
           </div>
         </div>
-      </a>
+      </Link>
     </div>
   );
 }
 
-function PushSdk({ title, Svg, PinkSvg }: SdkListItems) {
+function PushSdk({ title, Svg, PinkSvg, link }: SdkListItems) {
 
   const [isHovered, setIsHovered] = useState<boolean>(false);
 
@@ -172,25 +181,27 @@ function PushSdk({ title, Svg, PinkSvg }: SdkListItems) {
   }
 
   return (
-    <div onMouseOver={handleMouseEnter} onMouseLeave={handleMouseLeave} className={`sdk-container ${isHovered ? 'border-pink' : 'gray-border'}`}>
-      <div className='sdk-container-inner'>
-        <div className='sdk-title'>
-          {title}
-        </div>
-        <div className='sdk-icon'>
-          {
-            isHovered ? (
-              <PinkSvg />
-            ) : (
-              <Svg />
-            )
-          }
+    <Link to={link} target='_blank'>
+      <div onMouseOver={handleMouseEnter} onMouseLeave={handleMouseLeave} className={`sdk-container ${isHovered ? 'border-pink' : 'gray-border'}`}>
+
+        <div className='sdk-container-inner'>
+          <div className='sdk-title'>
+            {title}
+          </div>
+          <div className='sdk-icon'>
+            {
+              isHovered ? (
+                <PinkSvg />
+              ) : (
+                <Svg />
+              )
+            }
+          </div>
         </div>
       </div>
-    </div>
+    </Link>
   )
 }
-
 export default function HomepageFeatures({ PinkSvg }): JSX.Element {
   return (
     <section>
@@ -221,22 +232,24 @@ export default function HomepageFeatures({ PinkSvg }): JSX.Element {
             </div>
           </div>
         </div>
-      </div>
-      <div style={{ flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
-        <div style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", maxWidth: "72%", margin: "auto", marginTop: "70px", marginBottom: "50px" }}>
-          <span className="hero_home_Faq_header">
-            Frequently Asked Questions
-          </span>
-          <div className='hero_home_faq'>
-            <p>
-              Explore Faqs
-            </p>
-            <ArrowUp className='arrowUp-icon' />
+        <div className='Faqs-main-container'>
+          <div className='Faqs-sub-container'>
+            <span className="hero_home_Faq_header">
+              Frequently Asked Questions
+            </span>
+            <Link to='/docs/FAQS/faq' target='_blank'>
+              <div className='hero_home_faq'>
+                <p className='hero_home_faq_link'>
+                  Explore FAQs
+                </p>
+                <ArrowUp className='arrowUp-icon' />
+              </div>
+            </Link>
           </div>
+          <FAQ />
         </div>
-        <FAQ />
-        <FooterComponent />
       </div>
-    </section >
+      <FooterComponent />
+    </section>
   );
 }

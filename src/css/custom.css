@@ -139,6 +139,13 @@ a:hover {
   color: #DD44B9;
   display: flex;
   gap: 5px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero_home_faq_link {
+  margin-top: 15px;
 }
 
 .arrowUp-icon {
@@ -204,8 +211,8 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  column-gap: 20px;
-  row-gap: 20px;
+  column-gap: 32px;
+  row-gap: 32px;
 }
 
  @media (max-width: 1440px) {
@@ -233,6 +240,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  padding:  24px 25px 24px 25px;
 }
 
 .gray-border {
@@ -243,7 +251,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 100%;
 }
 
 .sdk-container-list {
@@ -255,6 +263,36 @@ a:hover {
 .sdk-title {
   font-size: 24px;
   font-weight: 500;
+  color: #000000;
+}
+
+.button--lg {
+  cursor: pointer;
+  z-index: 50;
+  background-color: #DD44B9;
+  border: none;
+  color: white;
+  display: flex;
+  column-gap: 25px;
+  align-items: center;
+  border-radius: 16px;
+  width: 218px;
+  height: 54px;
+}
+
+.Faqs-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Faqs-sub-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1150px;
+  margin: 70px auto 30px auto;
 }
 
 .sdk-icon {
@@ -267,7 +305,7 @@ a:hover {
   font-weight: 600;
   font-size: 36px;
   align-items: center;
-  /* margin-bottom: 30px; */
+  margin-left: 20px;
 }
 
 
@@ -298,7 +336,6 @@ a:hover {
   justify-content: space-between;
   min-height: 10px;
   text-align: left;
-  max-width: 90%;
   left: 50%;
   right: 50%;
   margin: auto;
@@ -306,8 +343,8 @@ a:hover {
 
 .answer-style {
   font-size: 18px;
-  max-width: 90%;
   margin: auto;
+  color: #575D73;
 }
 
 .question-align h4 {
@@ -323,7 +360,7 @@ a:hover {
 
 .question-style {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 500;
   display: flex;
   align-items: center;
   justify-content: center;

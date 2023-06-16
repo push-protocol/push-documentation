@@ -110,10 +110,9 @@ function FAQCard({ title, Svg, OpenSvg, description }: FaqItems) {
                             <p className="answer-style">{description}</p>
                         </div>
                     </div>
-
                 </button>
             </div>
-            <hr style={{ maxWidth: "80%", width: "75%", left: "50%", right: "50%", margin: "auto", backgroundColor: "#fffff", marginBottom: "30px" }} />
+            <hr style={{ maxWidth: "80%", margin: "auto", backgroundColor: "#fffff", marginBottom: "30px" }} />
         </div>
     )
 }
