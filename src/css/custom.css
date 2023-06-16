@@ -329,6 +329,13 @@ a:hover {
   justify-content: center;
 }
 
+.question-align {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+
 .rotate {
   transform: rotate(45deg);
 }
