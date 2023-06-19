@@ -24,8 +24,8 @@ Get all the notifications from a user.
 
 ```typescript
 const notifications = await PushAPI.user.getFeeds({
-  user: 'eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681', // user address in CAIP
-  env: 'staging'
+  user: "eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681", // user address in CAIP
+  env: "staging",
 });
 ```
 
@@ -35,9 +35,9 @@ Get all the notifications from a user that are in the spam box. Notifications go
 
 ```typescript
 const spams = await PushAPI.user.getFeeds({
-  user: 'eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681', // user address in CAIP
+  user: "eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681", // user address in CAIP
   spam: true,
-  env: 'staging'
+  env: "staging",
 });
 ```
 
@@ -58,8 +58,8 @@ This method provides us with the list of channel addresses subscribed by a user 
 
 ```typescript
 const subscriptions = await PushAPI.user.getSubscriptions({
-  user: 'eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681', // user address in CAIP
-  env: 'staging'
+  user: "eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681", // user address in CAIP
+  env: "staging",
 });
 ```
 
@@ -80,8 +80,8 @@ This method will return the channel's data
 
 ```typescript
 const channelData = await PushAPI.channels.getChannel({
-  channel: 'eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681', // channel address in CAIP
-  env: 'staging'
+  channel: "eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681", // channel address in CAIP
+  env: "staging",
 });
 ```
 
@@ -98,21 +98,21 @@ This method fetches the subscribers of a channel.
 
 ```typescript
 const subscribers = await PushAPI.channels.getSubscribers({
-  channel: 'eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681', // channel address in CAIP
+  channel: "eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681", // channel address in CAIP
   page: 1, // Optional, defaults to 1
   limit: 10, // Optional, defaults to 10
-  env: 'prod' // Optional, defaults to 'prod'
+  env: "prod", // Optional, defaults to 'prod'
 });
 ```
 
 #### Allowed Options (params with \* are mandatory)
 
-| Param   | Type    | Default | Remarks                                                                       |
-| ------- | ------- | ------- | ----------------------------------------------------------------------------- |
-| channel | string  | -       | Mandatory                                                                     |
-| page    | number  | 1       | <p>Optional: <br/><br/>page index of the results, greater than 0</p>            |
-| limit   | number  | 10      | <p>Optional: <br/><br/>number of items in 1 page, greater than 0 and max 30</p> |
-| env     | string  | prod    | <p>Optional:<br/><br/>API env - 'prod', 'staging', 'dev'</p>                    |
+| Param   | Type   | Default | Remarks                                                                         |
+| ------- | ------ | ------- | ------------------------------------------------------------------------------- |
+| channel | string | -       | Mandatory                                                                       |
+| page    | number | 1       | <p>Optional: <br/><br/>page index of the results, greater than 0</p>            |
+| limit   | number | 10      | <p>Optional: <br/><br/>number of items in 1 page, greater than 0 and max 30</p> |
+| env     | string | prod    | <p>Optional:<br/><br/>API env - 'prod', 'staging', 'dev'</p>                    |
 
 ## **Searching for channel(s)**
 
@@ -120,10 +120,10 @@ const subscribers = await PushAPI.channels.getSubscribers({
 
 ```typescript
 const channelsData = await PushAPI.channels.search({
-  query: 'push', // a search query
+  query: "push", // a search query
   page: 1, // page index
   limit: 20, // no of items per page
-  env: 'staging'
+  env: "staging",
 });
 ```
 
