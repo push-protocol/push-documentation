@@ -9,7 +9,6 @@ import Link from '@docusaurus/Link';
 
 type DevGuideItems = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
   description: JSX.Element;
   PinkSvg?: React.ComponentType<React.ComponentProps<'svg'>>;
   link?: string;
@@ -70,6 +69,7 @@ const DevGuide: DevGuideItems[] = [
     description: (
       <>
         Explore different ways of sending and receiving notifications and more.
+
       </>
     ),
   },
@@ -81,6 +81,7 @@ const DevGuide: DevGuideItems[] = [
     description: (
       <>
         Learn about the details of Push Chat and how to easily integrate it.
+
       </>
     ),
   },
@@ -126,9 +127,40 @@ const DevGuide: DevGuideItems[] = [
     description: (
       <>
         Showrunners Framework and how to boost your web3 communications.
+
       </>
     ),
+  }
+]
+
+const PushSDK = [
+  {
+    title: 'SDK Starter Kit',
   },
+  {
+    title: 'REST API',
+  },
+  {
+    title: 'React Native',
+  },
+  {
+    title: 'Socket',
+  },
+  {
+    title: 'UIWeb',
+  },
+  {
+    title: 'UI Embed',
+  }
+]
+
+const accordionItems = [
+  { title: 'What is Push?', content: 'Content for Section 1' },
+  { title: 'How do I contact customer support?', content: 'You can try telekinesis, but we recommend using our contact form instead.' },
+  { title: 'What is Push trying to solve?', content: 'Content for Section 3' },
+  { title: 'How can I use Push as an end-user?', content: 'Content for Section 3' },
+  { title: 'What are the web3 communication products launched by Push?', content: 'Content for Section 3' },
+  { title: 'Do I have to pay to send notifications?', content: 'Content for Section 3' },
 ];
 
 function GuideList({ title, Svg, description, PinkSvg, link }: DevGuideItems) {
@@ -161,6 +193,7 @@ function GuideList({ title, Svg, description, PinkSvg, link }: DevGuideItems) {
           </div>
         </div>
       </Link>
+
     </div>
   );
 }
@@ -247,7 +280,16 @@ export default function HomepageFeatures({ PinkSvg }): JSX.Element {
             </Link>
           </div>
           <FAQ />
+
         </div>
+        <h1 className={styles.h1Custom}>Push SDK</h1>
+        <div className={styles.row}>
+        {PushSDK.map((props, idx) => (
+            <SDKCard key={idx} {...props} />
+          ))}
+        </div>
+        <h1 className={styles.h1Custom}>Frequently Asked Questions</h1>
+        <Accordion items={accordionItems}/>
       </div>
     </section>
     <FooterComponent />
