@@ -4,7 +4,7 @@ import "../../css/custom.css"
 // import ArrowUp from "@site/static/img/ArrowUpRight-pink.svg"
 // import Link from '@docusaurus/Link';
 // import CubePlay from "@site/static/img/cube-footer-icon.svg"
-import BellIcon from "@site/static/img/Push-Logo-Standard-White.svg";
+// import BellIcon from "@site/static/img/Push-Logo-Standard-White.svg";
 import GithubSVG from "@site/static/img/github.svg";
 import TwitterSVG from "@site/static/img/twitter.svg";
 import TelegramSVG from "@site/static/img/telegram.svg";

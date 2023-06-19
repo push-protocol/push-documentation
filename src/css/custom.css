@@ -345,6 +345,9 @@ a:hover {
   font-size: 18px;
   margin: auto;
   color: #575D73;
+  font-family: var(--ifm-font-family-base);
+  font-weight: 400;
+  line-height: 142%;
 }
 
 .question-align h4 {
