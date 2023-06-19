@@ -2,10 +2,6 @@
 description: This section describes how to send a notification using the Push SDK.
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-import CustomLinkCard from '@site/src/components/CustomLinkCard';
-
 # Using Push SDK (Gasless)
 
 :::info
@@ -16,33 +12,19 @@ Check out [**push-for-hackers/sdk-functionality**](https://github.com/ethereum-p
 
 Install the sdk `restapi` package and its peer dependencies in your app.
 
-```mdx-code-block
-<Tabs
-    defaultValue="npm"
-    values={[
-        {label: 'npm', value: 'npm'},
-        {label: 'yarn', value: 'yarn'},
-    ]}>
-<TabItem value="npm">
-```
-
+{% tabs %}
+{% tab title="npm" %}
 ```bash
 npm install @pushprotocol/restapi@latest ethers
 ```
+{% endtab %}
 
-```mdx-code-block
-</TabItem>
-<TabItem value="yarn">
-```
-
+{% tab title="yarn" %}
 ```bash
 yarn add @pushprotocol/restapi@latest ethers
 ```
-
-```mdx-code-block
-</TabItem>
-</Tabs>
-```
+{% endtab %}
+{% endtabs %}
 
 :::caution
 _**Note**:_ If you wish to use ES6 Modules syntax, then inside `package.json` set **“type” to “module”.**
@@ -66,11 +48,11 @@ The `PKey` is the private key from the wallet you created a channel. The `channe
 import * as PushAPI from "@pushprotocol/restapi";
 import * as ethers from "ethers";
 
-const PK = "your_channel_address_secret_key"; // channel private key
+const PK = 'your_channel_address_secret_key'; // channel private key
 const Pkey = `0x${PK}`;
 const _signer = new ethers.Wallet(Pkey);
 
-const sendNotification = async () => {
+const sendNotification = async() => {
   try {
     const apiResponse = await PushAPI.payloads.sendNotification({
       signer: _signer,
@@ -78,25 +60,27 @@ const sendNotification = async () => {
       identityType: 2, // direct payload
       notification: {
         title: `[SDK-TEST] notification TITLE:`,
-        body: `[sdk-test] notification BODY`,
+        body: `[sdk-test] notification BODY`
       },
       payload: {
         title: `[sdk-test] payload title`,
         body: `sample msg body`,
-        cta: "",
-        img: "",
+        cta: '',
+        img: ''
       },
-      channel: "eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681", // your channel address
-      env: "staging",
+      channel: 'eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681', // your channel address
+      env: 'staging'
     });
   } catch (err) {
-    console.error("Error: ", err);
+    console.error('Error: ', err);
   }
-};
+}
 
 sendNotification();
 ```
 
 For sending different types of notifications, such as Targeted and Subset, and for more examples, go to the page below:
 
-<CustomLinkCard text='Send Notifications' link='../../developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-restapi/for-notification/send-notifications' />
+{% content-ref url="../../developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-restapi/for-notification/send-notifications.md" %}
+[send-notifications.md](../../developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-restapi/for-notification/send-notifications.md)
+{% endcontent-ref %}
