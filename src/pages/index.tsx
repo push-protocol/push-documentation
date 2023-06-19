@@ -22,7 +22,7 @@ function HomepageHeader() {
             style={{ color: "white" }}
             className="button button--secondary button--lg"
             to="/docs/intro">
-            <div>
+            <div className='spacing-small'>
               Get Started
             </div>
             <WhiteArrow />

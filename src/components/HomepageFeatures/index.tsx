@@ -185,7 +185,7 @@ function PushSdk({ title, Svg, PinkSvg, link }: SdkListItems) {
       <div onMouseOver={handleMouseEnter} onMouseLeave={handleMouseLeave} className={`sdk-container ${isHovered ? 'border-pink' : 'gray-border'}`}>
 
         <div className='sdk-container-inner'>
-          <div className='sdk-title'>
+          <div className='sdk-title spacing-small'>
             {title}
           </div>
           <div className='sdk-icon'>
@@ -205,33 +205,33 @@ function PushSdk({ title, Svg, PinkSvg, link }: SdkListItems) {
 export default function HomepageFeatures({ PinkSvg }): JSX.Element {
   return (
     <section>
-      <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-        <div style={{ display: "flex", flexDirection: "column", maxWidth: "98%", alignItems: "flex-start" }}>
+    <section className='main-section'>
+      
+        <div>
           <div className="hero_home">
             Developer Guides
           </div>
-          <div className="container">
+          <div>
             <div className="guide_list">
               {DevGuide.map((props, idx) => (
                 <GuideList key={idx} {...props} />
               ))}
             </div>
           </div>
-        </div>
       </div>
-      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
-        <div style={{ display: "flex", flexDirection: "column", maxWidth: "98%", alignItems: "flex-start" }}>
+      
+      <div>
           <div className="hero_home">
             Push SDK
           </div>
-          <div className="container">
+          <div>
             <div className="guide_list">
               {SdkList.map((props, idx) => (
                 <PushSdk key={idx} {...props} />
               ))}
             </div>
-          </div>
         </div>
+        
         <div className='Faqs-main-container'>
           <div className='Faqs-sub-container'>
             <span className="hero_home_Faq_header">
@@ -249,7 +249,8 @@ export default function HomepageFeatures({ PinkSvg }): JSX.Element {
           <FAQ />
         </div>
       </div>
-      <FooterComponent />
+    </section>
+    <FooterComponent />
     </section>
   );
 }
