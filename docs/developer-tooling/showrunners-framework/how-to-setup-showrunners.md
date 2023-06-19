@@ -4,9 +4,6 @@ description: >-
   enable you to rapidly create and deploy web3 notifications from backend.
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 # How to Setup Showrunners?
 
 ## Prerequisites
@@ -72,25 +69,19 @@ Now that you have set up the showrunners .env file, you are all set to run the s
 
 * All dependencies are installed, open the terminal (or command prompt), and go to the root of the cloned repo, `npm install` or `yarn install` to install dependencies.
 
-<Tabs
-    defaultValue="npm"
-    values={[
-        {label: 'npm', value: 'npm'},
-        {label: 'yarn', value: 'yarn'},
-    ]}>
-<TabItem value="npm">
-
+{% tabs %}
+{% tab title="npm" %}
 ```bash
 npm install
 ```
-</TabItem>
-<TabItem value="yarn">
+{% endtab %}
 
+{% tab title="yarn" %}
 ```bash
 yarn install
 ```
-</TabItem>
-</Tabs>
+{% endtab %}
+{% endtabs %}
 
 #### Run Docker Image
 
@@ -104,25 +95,19 @@ docker-compose up
 
 * Finally, open another terminal and ensure you are still at the root of the cloned repo and fire `npm start`  or `yarn start`
 
-<Tabs
-    defaultValue="npm"
-    values={[
-        {label: 'npm', value: 'npm'},
-        {label: 'yarn', value: 'yarn'},
-    ]}>
-<TabItem value="npm">
-
+{% tabs %}
+{% tab title="npm" %}
 ```bash
 npm start
 ```
-</TabItem>
-<TabItem value="yarn">
+{% endtab %}
 
+{% tab title="yarn" %}
 ```bash
 yarn start
 ```
-</TabItem>
-</Tabs>
+{% endtab %}
+{% endtabs %}
 
 If everything is good, this is the output that you should see! Congrats, you just installed Showrunners framework :relaxed::relaxed: running on the port`:5432` :mechanical\_arm:
 
