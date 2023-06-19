@@ -6,10 +6,13 @@ import Styles from "./styles.module.css"
 import FAQ from './Faq';
 import { FooterComponent } from './Footer';
 import Link from '@docusaurus/Link';
+import styles from './styles.module.css';
+
 
 type DevGuideItems = {
   title: string;
   description: JSX.Element;
+  Svg?: React.ComponentType<React.ComponentProps<'svg'>>;
   PinkSvg?: React.ComponentType<React.ComponentProps<'svg'>>;
   link?: string;
 };
@@ -282,14 +285,14 @@ export default function HomepageFeatures({ PinkSvg }): JSX.Element {
           <FAQ />
 
         </div>
-        <h1 className={styles.h1Custom}>Push SDK</h1>
-        <div className={styles.row}>
-        {PushSDK.map((props, idx) => (
+        {/* <h1 className={styles.h1Custom}>Push SDK</h1> */}
+        {/* <div className={styles.row}> */}
+        {/* {PushSDK.map((props, idx) => (
             <SDKCard key={idx} {...props} />
-          ))}
-        </div>
-        <h1 className={styles.h1Custom}>Frequently Asked Questions</h1>
-        <Accordion items={accordionItems}/>
+          ))} */}
+        {/* </div> */}
+        {/* <h1 className={styles.h1Custom}>Frequently Asked Questions</h1>
+        <Accordion items={accordionItems}/> */}
       </div>
     </section>
     <FooterComponent />
