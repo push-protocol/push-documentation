@@ -1,4 +1,4 @@
-"use strict";(self.webpackChunkpush_doc_hub_v_2=self.webpackChunkpush_doc_hub_v_2||[]).push([[9166],{3905:(A,e,t)=>{t.d(e,{Zo:()=>w,kt:()=>s});var i=t(7294);function o(A,e,t){return e in A?Object.defineProperty(A,e,{value:t,enumerable:!0,configurable:!0,writable:!0}):A[e]=t,A}function a(A,e){var t=Object.keys(A);if(Object.getOwnPropertySymbols){var i=Object.getOwnPropertySymbols(A);e&&(i=i.filter((function(e){return Object.getOwnPropertyDescriptor(A,e).enumerable}))),t.push.apply(t,i)}return t}function n(A){for(var e=1;e<arguments.length;e++){var t=null!=arguments[e]?arguments[e]:{};e%2?a(Object(t),!0).forEach((function(e){o(A,e,t[e])})):Object.getOwnPropertyDescriptors?Object.defineProperties(A,Object.getOwnPropertyDescriptors(t)):a(Object(t)).forEach((function(e){Object.defineProperty(A,e,Object.getOwnPropertyDescriptor(t,e))}))}return A}function g(A,e){if(null==A)return{};var t,i,o=function(A,e){if(null==A)return{};var t,i,o={},a=Object.keys(A);for(i=0;i<a.length;i++)t=a[i],e.indexOf(t)>=0||(o[t]=A[t]);return o}(A,e);if(Object.getOwnPropertySymbols){var a=Object.getOwnPropertySymbols(A);for(i=0;i<a.length;i++)t=a[i],e.indexOf(t)>=0||Object.prototype.propertyIsEnumerable.call(A,t)&&(o[t]=A[t])}return o}var l=i.createContext({}),c=function(A){var e=i.useContext(l),t=e;return A&&(t="function"==typeof A?A(e):n(n({},e),A)),t},w=function(A){var e=c(A.components);return i.createElement(l.Provider,{value:e},A.children)},D="mdxType",I={inlineCode:"code",wrapper:function(A){var e=A.children;return i.createElement(i.Fragment,{},e)}},M=i.forwardRef((function(A,e){var t=A.components,o=A.mdxType,a=A.originalType,l=A.parentName,w=g(A,["components","mdxType","originalType","parentName"]),D=c(t),M=o,s=D["".concat(l,".").concat(M)]||D[M]||I[M]||a;return t?i.createElement(s,n(n({ref:e},w),{},{components:t})):i.createElement(s,n({ref:e},w))}));function s(A,e){var t=arguments,o=e&&e.mdxType;if("string"==typeof A||o){var a=t.length,n=new Array(a);n[0]=M;var g={};for(var l in e)hasOwnProperty.call(e,l)&&(g[l]=e[l]);g.originalType=A,g[D]="string"==typeof A?A:o,n[1]=g;for(var c=2;c<a;c++)n[c]=t[c];return i.createElement.apply(null,n)}return i.createElement.apply(null,t)}M.displayName="MDXCreateElement"},5162:(A,e,t)=>{t.d(e,{Z:()=>n});var i=t(7294),o=t(6010);const a={tabItem:"tabItem_Ymn6"};function n(A){let{children:e,hidden:t,className:n}=A;return i.createElement("div",{role:"tabpanel",className:(0,o.Z)(a.tabItem,n),hidden:t},e)}},4866:(A,e,t)=>{t.d(e,{Z:()=>m});var i=t(7462),o=t(7294),a=t(6010),n=t(2466),g=t(6550),l=t(1980),c=t(7392),w=t(12);function D(A){return function(A){return o.Children.map(A,(A=>{if(!A||(0,o.isValidElement)(A)&&function(A){const{props:e}=A;return!!e&&"object"==typeof e&&"value"in e}(A))return A;throw new Error(`Docusaurus error: Bad <Tabs> child <${"string"==typeof A.type?A.type:A.type.name}>: all children of the <Tabs> component should be <TabItem>, and every <TabItem> should have a unique "value" prop.`)}))?.filter(Boolean)??[]}(A).map((A=>{let{props:{value:e,label:t,attributes:i,default:o}}=A;return{value:e,label:t,attributes:i,default:o}}))}function I(A){const{values:e,children:t}=A;return(0,o.useMemo)((()=>{const A=e??D(t);return function(A){const e=(0,c.l)(A,((A,e)=>A.value===e.value));if(e.length>0)throw new Error(`Docusaurus error: Duplicate values "${e.map((A=>A.value)).join(", ")}" found in <Tabs>. Every value needs to be unique.`)}(A),A}),[e,t])}function M(A){let{value:e,tabValues:t}=A;return t.some((A=>A.value===e))}function s(A){let{queryString:e=!1,groupId:t}=A;const i=(0,g.k6)(),a=function(A){let{queryString:e=!1,groupId:t}=A;if("string"==typeof e)return e;if(!1===e)return null;if(!0===e&&!t)throw new Error('Docusaurus error: The <Tabs> component groupId prop is required if queryString=true, because this value is used as the search param name. You can also provide an explicit value such as queryString="my-search-param".');return t??null}({queryString:e,groupId:t});return[(0,l._X)(a),(0,o.useCallback)((A=>{if(!a)return;const e=new URLSearchParams(i.location.search);e.set(a,A),i.replace({...i.location,search:e.toString()})}),[a,i])]}function G(A){const{defaultValue:e,queryString:t=!1,groupId:i}=A,a=I(A),[n,g]=(0,o.useState)((()=>function(A){let{defaultValue:e,tabValues:t}=A;if(0===t.length)throw new Error("Docusaurus error: the <Tabs> component requires at least one <TabItem> children component");if(e){if(!M({value:e,tabValues:t}))throw new Error(`Docusaurus error: The <Tabs> has a defaultValue "${e}" but none of its children has the corresponding value. Available values are: ${t.map((A=>A.value)).join(", ")}. If you intend to show no default tab, use defaultValue={null} instead.`);return e}const i=t.find((A=>A.default))??t[0];if(!i)throw new Error("Unexpected error: 0 tabValues");return i.value}({defaultValue:e,tabValues:a}))),[l,c]=s({queryString:t,groupId:i}),[D,G]=function(A){let{groupId:e}=A;const t=function(A){return A?`docusaurus.tab.${A}`:null}(e),[i,a]=(0,w.Nk)(t);return[i,(0,o.useCallback)((A=>{t&&a.set(A)}),[t,a])]}({groupId:i}),r=(()=>{const A=l??D;return M({value:A,tabValues:a})?A:null})();(0,o.useLayoutEffect)((()=>{r&&g(r)}),[r]);return{selectedValue:n,selectValue:(0,o.useCallback)((A=>{if(!M({value:A,tabValues:a}))throw new Error(`Can't select invalid tab value=${A}`);g(A),c(A),G(A)}),[c,G,a]),tabValues:a}}var r=t(2389);const d={tabList:"tabList__CuJ",tabItem:"tabItem_LNqP"};function p(A){let{className:e,block:t,selectedValue:g,selectValue:l,tabValues:c}=A;const w=[],{blockElementScrollPositionUntilNextRender:D}=(0,n.o5)(),I=A=>{const e=A.currentTarget,t=w.indexOf(e),i=c[t].value;i!==g&&(D(e),l(i))},M=A=>{let e=null;switch(A.key){case"Enter":I(A);break;case"ArrowRight":{const t=w.indexOf(A.currentTarget)+1;e=w[t]??w[0];break}case"ArrowLeft":{const t=w.indexOf(A.currentTarget)-1;e=w[t]??w[w.length-1];break}}e?.focus()};return o.createElement("ul",{role:"tablist","aria-orientation":"horizontal",className:(0,a.Z)("tabs",{"tabs--block":t},e)},c.map((A=>{let{value:e,label:t,attributes:n}=A;return o.createElement("li",(0,i.Z)({role:"tab",tabIndex:g===e?0:-1,"aria-selected":g===e,key:e,ref:A=>w.push(A),onKeyDown:M,onClick:I},n,{className:(0,a.Z)("tabs__item",d.tabItem,n?.className,{"tabs__item--active":g===e})}),t??e)})))}function u(A){let{lazy:e,children:t,selectedValue:i}=A;const a=(Array.isArray(t)?t:[t]).filter(Boolean);if(e){const A=a.find((A=>A.props.value===i));return A?(0,o.cloneElement)(A,{className:"margin-top--md"}):null}return o.createElement("div",{className:"margin-top--md"},a.map(((A,e)=>(0,o.cloneElement)(A,{key:e,hidden:A.props.value!==i}))))}function B(A){const e=G(A);return o.createElement("div",{className:(0,a.Z)("tabs-container",d.tabList)},o.createElement(p,(0,i.Z)({},A,e)),o.createElement(u,(0,i.Z)({},A,e)))}function m(A){const e=(0,r.Z)();return o.createElement(B,(0,i.Z)({key:String(e)},A))}},9889:(A,e,t)=>{t.d(e,{JU:()=>M,F0:()=>s,Ar:()=>p,cO:()=>r,AB:()=>u});var i=t(508);const o=`(max-width: ${"375px"})`,a=`(max-width: ${"768px"})`,n=`(max-width: ${"1024px"})`,g={DESKTOP:{TOP:"120px",RIGHT:"40px",BOTTOM:"120px",LEFT:"40px"},TABLET:{TOP:"60px",RIGHT:"25px",BOTTOM:"60px",LEFT:"25px"},MOBILE:{TOP:"40px",RIGHT:"20px",BOTTOM:"40px",LEFT:"20px"}},l={LINKS:{IOS_APP:"https://apps.apple.com/app/ethereum-push-service-epns/id1528614910",ANDROID_APP:"https://play.google.com/store/apps/details?id=io.epns.epns&hl=mr&gl=US"},STORAGE:{},CONSTANTS:{HEADER_HEIGHT:70,LEFT_BAR_WIDTH:260},ADJUSTMENTS:{PADDING:{HUGE:"60px",BIG:"40px",SMALL:"20px"},MARGIN:{VERTICAL:"30px",HORIZONTAL:"20px",DEFAULT:{DESKTOP:`${g.DESKTOP.TOP} ${g.DESKTOP.RIGHT} ${g.DESKTOP.BOTTOM} ${g.DESKTOP.LEFT}`,TABLET:`${g.TABLET.TOP} ${g.TABLET.RIGHT} ${g.TABLET.BOTTOM} ${g.TABLET.LEFT}`,MOBILE:`${g.MOBILE.TOP} ${g.MOBILE.RIGHT} ${g.MOBILE.BOTTOM} ${g.MOBILE.LEFT}`}},RADIUS:{LARGE:"48px",MID:"32px",SMALL:"16px"},BLUR:{DEFAULT:5,HEADER:10},FONT:{PRIMARY_HEADING:{DESKTOP:"62px",TABLET:"42px",MOBILE:"34px"},HEADING:{DESKTOP:"32px",TABLET:"28px",MOBILE:"26px"},HIGHLIGHTED_TEXT:{DESKTOP:"48px",TABLET:"40px",MOBILE:"32px"},NORMAL_TEXT:{DESKTOP:"20px",TABLET:"16px",MOBILE:"14px"}}},COLORS:{HIGHLIGHT:"#DD44B9",FONT_LIGHT:"#000",FONT_LIGHT_SECONDARY:"000",FONT_DARK:"#121315",FONT_DARK_SECONDARY:"#303C5E",BG_LIGHT:"#FFF",BG_DARK:"#121315",HEADER_BG_LIGHT:"#FFFFFFCC",HEADER_BG_DARK:"#121315CC",BG_DARK_SECONDARY:"#2A2A39",BG_LIGHT_SECONDARY:"#F0DCFF",BG_HIGHLIGHTED_LIGHT_TRANSPARENT:"rgba(219, 171, 255, 0.7);",BG_HIGHLIGHTED_MID_TRANSPARENT:"rgba(235, 216, 249, 0.5);",BG_GRADIENT_PRIMARY:"linear-gradient(251.72deg, #DD44B9 14.29%, #8B6FD9 86.35%);"}},c=(i.ZP.h1`
+"use strict";(self.webpackChunkpush_doc_hub_v_2=self.webpackChunkpush_doc_hub_v_2||[]).push([[9166],{3905:(A,e,t)=>{t.d(e,{Zo:()=>w,kt:()=>s});var i=t(7294);function o(A,e,t){return e in A?Object.defineProperty(A,e,{value:t,enumerable:!0,configurable:!0,writable:!0}):A[e]=t,A}function a(A,e){var t=Object.keys(A);if(Object.getOwnPropertySymbols){var i=Object.getOwnPropertySymbols(A);e&&(i=i.filter((function(e){return Object.getOwnPropertyDescriptor(A,e).enumerable}))),t.push.apply(t,i)}return t}function n(A){for(var e=1;e<arguments.length;e++){var t=null!=arguments[e]?arguments[e]:{};e%2?a(Object(t),!0).forEach((function(e){o(A,e,t[e])})):Object.getOwnPropertyDescriptors?Object.defineProperties(A,Object.getOwnPropertyDescriptors(t)):a(Object(t)).forEach((function(e){Object.defineProperty(A,e,Object.getOwnPropertyDescriptor(t,e))}))}return A}function g(A,e){if(null==A)return{};var t,i,o=function(A,e){if(null==A)return{};var t,i,o={},a=Object.keys(A);for(i=0;i<a.length;i++)t=a[i],e.indexOf(t)>=0||(o[t]=A[t]);return o}(A,e);if(Object.getOwnPropertySymbols){var a=Object.getOwnPropertySymbols(A);for(i=0;i<a.length;i++)t=a[i],e.indexOf(t)>=0||Object.prototype.propertyIsEnumerable.call(A,t)&&(o[t]=A[t])}return o}var l=i.createContext({}),c=function(A){var e=i.useContext(l),t=e;return A&&(t="function"==typeof A?A(e):n(n({},e),A)),t},w=function(A){var e=c(A.components);return i.createElement(l.Provider,{value:e},A.children)},D="mdxType",I={inlineCode:"code",wrapper:function(A){var e=A.children;return i.createElement(i.Fragment,{},e)}},M=i.forwardRef((function(A,e){var t=A.components,o=A.mdxType,a=A.originalType,l=A.parentName,w=g(A,["components","mdxType","originalType","parentName"]),D=c(t),M=o,s=D["".concat(l,".").concat(M)]||D[M]||I[M]||a;return t?i.createElement(s,n(n({ref:e},w),{},{components:t})):i.createElement(s,n({ref:e},w))}));function s(A,e){var t=arguments,o=e&&e.mdxType;if("string"==typeof A||o){var a=t.length,n=new Array(a);n[0]=M;var g={};for(var l in e)hasOwnProperty.call(e,l)&&(g[l]=e[l]);g.originalType=A,g[D]="string"==typeof A?A:o,n[1]=g;for(var c=2;c<a;c++)n[c]=t[c];return i.createElement.apply(null,n)}return i.createElement.apply(null,t)}M.displayName="MDXCreateElement"},5162:(A,e,t)=>{t.d(e,{Z:()=>n});var i=t(7294),o=t(6010);const a={tabItem:"tabItem_Ymn6"};function n(A){let{children:e,hidden:t,className:n}=A;return i.createElement("div",{role:"tabpanel",className:(0,o.Z)(a.tabItem,n),hidden:t},e)}},4866:(A,e,t)=>{t.d(e,{Z:()=>m});var i=t(7462),o=t(7294),a=t(6010),n=t(2466),g=t(6550),l=t(1980),c=t(7392),w=t(12);function D(A){return function(A){return o.Children.map(A,(A=>{if(!A||(0,o.isValidElement)(A)&&function(A){const{props:e}=A;return!!e&&"object"==typeof e&&"value"in e}(A))return A;throw new Error(`Docusaurus error: Bad <Tabs> child <${"string"==typeof A.type?A.type:A.type.name}>: all children of the <Tabs> component should be <TabItem>, and every <TabItem> should have a unique "value" prop.`)}))?.filter(Boolean)??[]}(A).map((A=>{let{props:{value:e,label:t,attributes:i,default:o}}=A;return{value:e,label:t,attributes:i,default:o}}))}function I(A){const{values:e,children:t}=A;return(0,o.useMemo)((()=>{const A=e??D(t);return function(A){const e=(0,c.l)(A,((A,e)=>A.value===e.value));if(e.length>0)throw new Error(`Docusaurus error: Duplicate values "${e.map((A=>A.value)).join(", ")}" found in <Tabs>. Every value needs to be unique.`)}(A),A}),[e,t])}function M(A){let{value:e,tabValues:t}=A;return t.some((A=>A.value===e))}function s(A){let{queryString:e=!1,groupId:t}=A;const i=(0,g.k6)(),a=function(A){let{queryString:e=!1,groupId:t}=A;if("string"==typeof e)return e;if(!1===e)return null;if(!0===e&&!t)throw new Error('Docusaurus error: The <Tabs> component groupId prop is required if queryString=true, because this value is used as the search param name. You can also provide an explicit value such as queryString="my-search-param".');return t??null}({queryString:e,groupId:t});return[(0,l._X)(a),(0,o.useCallback)((A=>{if(!a)return;const e=new URLSearchParams(i.location.search);e.set(a,A),i.replace({...i.location,search:e.toString()})}),[a,i])]}function G(A){const{defaultValue:e,queryString:t=!1,groupId:i}=A,a=I(A),[n,g]=(0,o.useState)((()=>function(A){let{defaultValue:e,tabValues:t}=A;if(0===t.length)throw new Error("Docusaurus error: the <Tabs> component requires at least one <TabItem> children component");if(e){if(!M({value:e,tabValues:t}))throw new Error(`Docusaurus error: The <Tabs> has a defaultValue "${e}" but none of its children has the corresponding value. Available values are: ${t.map((A=>A.value)).join(", ")}. If you intend to show no default tab, use defaultValue={null} instead.`);return e}const i=t.find((A=>A.default))??t[0];if(!i)throw new Error("Unexpected error: 0 tabValues");return i.value}({defaultValue:e,tabValues:a}))),[l,c]=s({queryString:t,groupId:i}),[D,G]=function(A){let{groupId:e}=A;const t=function(A){return A?`docusaurus.tab.${A}`:null}(e),[i,a]=(0,w.Nk)(t);return[i,(0,o.useCallback)((A=>{t&&a.set(A)}),[t,a])]}({groupId:i}),r=(()=>{const A=l??D;return M({value:A,tabValues:a})?A:null})();(0,o.useLayoutEffect)((()=>{r&&g(r)}),[r]);return{selectedValue:n,selectValue:(0,o.useCallback)((A=>{if(!M({value:A,tabValues:a}))throw new Error(`Can't select invalid tab value=${A}`);g(A),c(A),G(A)}),[c,G,a]),tabValues:a}}var r=t(2389);const d={tabList:"tabList__CuJ",tabItem:"tabItem_LNqP"};function p(A){let{className:e,block:t,selectedValue:g,selectValue:l,tabValues:c}=A;const w=[],{blockElementScrollPositionUntilNextRender:D}=(0,n.o5)(),I=A=>{const e=A.currentTarget,t=w.indexOf(e),i=c[t].value;i!==g&&(D(e),l(i))},M=A=>{let e=null;switch(A.key){case"Enter":I(A);break;case"ArrowRight":{const t=w.indexOf(A.currentTarget)+1;e=w[t]??w[0];break}case"ArrowLeft":{const t=w.indexOf(A.currentTarget)-1;e=w[t]??w[w.length-1];break}}e?.focus()};return o.createElement("ul",{role:"tablist","aria-orientation":"horizontal",className:(0,a.Z)("tabs",{"tabs--block":t},e)},c.map((A=>{let{value:e,label:t,attributes:n}=A;return o.createElement("li",(0,i.Z)({role:"tab",tabIndex:g===e?0:-1,"aria-selected":g===e,key:e,ref:A=>w.push(A),onKeyDown:M,onClick:I},n,{className:(0,a.Z)("tabs__item",d.tabItem,n?.className,{"tabs__item--active":g===e})}),t??e)})))}function u(A){let{lazy:e,children:t,selectedValue:i}=A;const a=(Array.isArray(t)?t:[t]).filter(Boolean);if(e){const A=a.find((A=>A.props.value===i));return A?(0,o.cloneElement)(A,{className:"margin-top--md"}):null}return o.createElement("div",{className:"margin-top--md"},a.map(((A,e)=>(0,o.cloneElement)(A,{key:e,hidden:A.props.value!==i}))))}function B(A){const e=G(A);return o.createElement("div",{className:(0,a.Z)("tabs-container",d.tabList)},o.createElement(p,(0,i.Z)({},A,e)),o.createElement(u,(0,i.Z)({},A,e)))}function m(A){const e=(0,r.Z)();return o.createElement(B,(0,i.Z)({key:String(e)},A))}},9889:(A,e,t)=>{t.d(e,{JU:()=>G,xk:()=>s,wb:()=>w,v:()=>D,F0:()=>r,Ar:()=>B,cO:()=>p,AB:()=>m,OA:()=>M});var i=t(508);const o=`(max-width: ${"375px"})`,a=`(max-width: ${"768px"})`,n=`(max-width: ${"1024px"})`,g={DESKTOP:{TOP:"120px",RIGHT:"40px",BOTTOM:"120px",LEFT:"40px"},TABLET:{TOP:"60px",RIGHT:"25px",BOTTOM:"60px",LEFT:"25px"},MOBILE:{TOP:"40px",RIGHT:"20px",BOTTOM:"40px",LEFT:"20px"}},l={LINKS:{IOS_APP:"https://apps.apple.com/app/ethereum-push-service-epns/id1528614910",ANDROID_APP:"https://play.google.com/store/apps/details?id=io.epns.epns&hl=mr&gl=US"},STORAGE:{},CONSTANTS:{HEADER_HEIGHT:70,LEFT_BAR_WIDTH:260},ADJUSTMENTS:{PADDING:{HUGE:"60px",BIG:"40px",SMALL:"20px"},MARGIN:{VERTICAL:"30px",HORIZONTAL:"20px",DEFAULT:{DESKTOP:`${g.DESKTOP.TOP} ${g.DESKTOP.RIGHT} ${g.DESKTOP.BOTTOM} ${g.DESKTOP.LEFT}`,TABLET:`${g.TABLET.TOP} ${g.TABLET.RIGHT} ${g.TABLET.BOTTOM} ${g.TABLET.LEFT}`,MOBILE:`${g.MOBILE.TOP} ${g.MOBILE.RIGHT} ${g.MOBILE.BOTTOM} ${g.MOBILE.LEFT}`}},RADIUS:{LARGE:"48px",MID:"32px",SMALL:"16px"},BLUR:{DEFAULT:5,HEADER:10},FONT:{PRIMARY_HEADING:{DESKTOP:"62px",TABLET:"42px",MOBILE:"34px"},HEADING:{DESKTOP:"32px",TABLET:"28px",MOBILE:"26px"},HIGHLIGHTED_TEXT:{DESKTOP:"48px",TABLET:"40px",MOBILE:"32px"},NORMAL_TEXT:{DESKTOP:"20px",TABLET:"16px",MOBILE:"14px"}}},COLORS:{HIGHLIGHT:"#DD44B9",FONT_LIGHT:"#000",FONT_LIGHT_SECONDARY:"000",FONT_DARK:"#121315",FONT_DARK_SECONDARY:"#303C5E",BG_LIGHT:"#FFF",BG_DARK:"#121315",HEADER_BG_LIGHT:"#FFFFFFCC",HEADER_BG_DARK:"#121315CC",BG_DARK_SECONDARY:"#2A2A39",BG_LIGHT_SECONDARY:"#F0DCFF",BG_HIGHLIGHTED_LIGHT_TRANSPARENT:"rgba(219, 171, 255, 0.7);",BG_HIGHLIGHTED_MID_TRANSPARENT:"rgba(235, 216, 249, 0.5);",BG_GRADIENT_PRIMARY:"linear-gradient(251.72deg, #DD44B9 14.29%, #8B6FD9 86.35%);"}},c=(i.ZP.h1`
   font-family: 'Strawford';
   font-size: 68px;
   line-height: 110%;
@@ -91,7 +91,7 @@
   ${c} {
     width: 0;
   }
-`,D=((0,i.ZP)(w)`
+`,D=(0,i.ZP)(w)`
   flex: ${A=>A.flex||"1"};
   flex-direction: ${A=>A.flexDirection||"column"};
 
@@ -99,7 +99,7 @@
     height: 0;
     width: auto;
   }
-`,i.ZP.h1`
+`,I=i.ZP.h1`
   color: ${A=>A.color||l.COLORS.FONT_LIGHT};
   font-weight: ${A=>A.fontWeight||700};
   font-size: ${A=>A.fontSize||l.ADJUSTMENTS.FONT.PRIMARY_HEADING.DESKTOP};
@@ -121,7 +121,7 @@
   @media ${o} {
     font-size: ${A=>A.fontSize||l.ADJUSTMENTS.FONT.PRIMARY_HEADING.MOBILE};
   }
-`),I=((0,i.ZP)(D)`
+`,M=((0,i.ZP)(I)`
   color: ${A=>A.color||l.COLORS.FONT_DARK};
   text-shadow: none;
   font-size: ${A=>A.fontSize||l.ADJUSTMENTS.FONT.HEADING};
@@ -134,7 +134,7 @@
   @media ${o} {
     font-size: ${A=>A.fontSize||l.ADJUSTMENTS.FONT.HEADING.MOBILE};
   }
-`,(0,i.ZP)(D)`
+`,(0,i.ZP)(I)`
   font-size: ${A=>A.fontSize||l.ADJUSTMENTS.FONT.HEADING};
 
   @media ${n} {
@@ -179,7 +179,7 @@
   @media ${o} {
     font-size: ${A=>A.fontSize||l.ADJUSTMENTS.FONT.NORMAL_TEXT.MOBILE};
   }
-`,i.ZP.button`
+`),s=i.ZP.button`
   display: ${A=>A.display||"initial"};
   line-height: ${A=>A.lineHeight||"26px"};
   flex: ${A=>A.flex||"initial"};
@@ -257,7 +257,7 @@
   & > div {
     display: flex;
   }
-`),M=(i.ZP.a`
+`,G=(i.ZP.a`
   display: ${A=>A.display||"initial"};
   line-height: ${A=>A.lineHeight||"26px"};
   flex: ${A=>A.flex||"initial"};
@@ -342,12 +342,12 @@
   &:hover {
     color: #000;
   }
-`),s=(0,i.ZP)(w)`
+`),r=(0,i.ZP)(w)`
   align-items: center;
   gap: 26px;
   justify-content: flex-start;
   margin-bottom: var(--ifm-leading);
-`,G=(0,i.ZP)(I)`
+`,d=(0,i.ZP)(s)`
   border: 1px solid #d9d9d9;
   border-radius: 16px;
   padding: 12px 16px;
@@ -389,8 +389,8 @@
   &:hover:after {
     background: transparent;
   }
-`,r=(0,i.ZP)(G)`
-`,d=(0,i.ZP)(G)`
+`,p=(0,i.ZP)(d)`
+`,u=(0,i.ZP)(d)`
   gap: 20px;
   padding: 30px 10px;
   justify-content: space-between;
@@ -398,12 +398,12 @@
   & img {
     height: 48px;
   }
-`,p=(0,i.ZP)(d)`
+`,B=(0,i.ZP)(u)`
   max-width: 160px;
   align-self: stretch;
   flex: 1;
 
-`,u=(0,i.ZP)(w)`
+`,m=(0,i.ZP)(w)`
   gap: 5px;
   align-items: center;
   justify-content: center;
