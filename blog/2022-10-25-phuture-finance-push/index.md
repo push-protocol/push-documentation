@@ -30,12 +30,12 @@ As Phuture works towards making DeFi more accessible with index funds, we’re e
 
 <center><b>.  .  .</b></center>
 
-## About Phuture Finance
+### About Phuture Finance
 [Phuture](https://www.phuture.finance/) (PHTR) is a decentralized crypto index platform that simplifies investments through automated, themed index funds on Ethereum. Accessible by anyone with an internet connection, Phuture is perfect for investors looking to upgrade their crypto investment strategy. Founded in 2019, Phuture has raised USD 3.75 million from VCs, crypto funds, and investors such as the CEO of Bitcoin.com.
 
 Follow Phuture on [Twitter](https://twitter.com/phuture_finance) and [subscribe to their announcements](http://phuture.finance/contact) to be the first to hear updates!
 
-## About Push Protocol
+### About Push Protocol
 
 Push is the communication protocol of web3. Push protocol enables cross-chain notifications and messaging for dapps, wallets, and services tied to wallet addresses in an open, gasless, and platform-agnostic fashion. The open communication layer allows any crypto wallet /frontend to tap into the network and get the communication across.
 

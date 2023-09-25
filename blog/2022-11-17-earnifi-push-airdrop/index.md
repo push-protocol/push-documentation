@@ -52,12 +52,12 @@ If you’re looking to be featured by Push in one of our upcoming Frens of Push 
 
 <center><b>.  .  .</b></center>
 
-## About Earnifi
+### About Earnifi
 Earnifi is a solution for discovering and receiving notifications for unclaimed airdrops — this includes tokens, NFTs, and other claimable assets. There is a free subscription that enables you to check for current airdrops and receive notifications on future ones. Never miss another airdrop again.
 
 Check out more about Earnifi: [Website](https://earni.fi/), [Twitter](https://twitter.com/Earni_fi).
 
-## About Push Protocol
+### About Push Protocol
 
 Push is the communication protocol of web3. Push protocol enables cross-chain notifications and messaging for dapps, wallets, and services tied to wallet addresses in an open, gasless, and platform-agnostic fashion. The open communication layer allows any crypto wallet /frontend to tap into the network and get the communication across.
 

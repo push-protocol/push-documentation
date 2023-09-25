@@ -39,12 +39,12 @@ In web3 social media, we Push together.
 
 <center><b>.  .  .</b></center>
 
-## About Lens Protocol
+### About Lens Protocol
 The Lens Protocol is a Web3 social graph on the Polygon Proof-of-Stake blockchain designed to empower creators to own the links between themselves and their community, forming a fully composable, user-owned social graph. The protocol is built from the ground up with modularity in mind, allowing new features and fixes to be added while ensuring immutable user-owned content and social relationships. Lens currently has over 100 applications built on top of it.
 
 Learn more at https://lens.xyz, [Twitter](https://twitter.com/LensProtocol), [Discord](https://discord.com/invite/lensprotocol)
 
-## About Push Protocol
+### About Push Protocol
 
 Push is the communication protocol of web3. Push protocol enables cross-chain notifications and messaging for dapps, wallets, and services tied to wallet addresses in an open, gasless, and platform-agnostic fashion. The open communication layer allows any crypto wallet /frontend to tap into the network and get the communication across.
 

@@ -66,12 +66,12 @@ We want to thank [Brad](https://twitter.com/bradwmorris) for speaking with us! W
 
 <center><b>.  .  .</b></center>
 
-## About Index Coop
+### About Index Coop
 Index Coop is a collective that provides broad exposure to DeFi, making the purchase of digital assets simpler and cost-effective. The coop is aimed at creating structured products that provide access to sophisticated crypto strategies. Their flagship product, the DeFi Pulse Index, being one such example.
 
 Check out more about Index Coop: [Website](https://indexcoop.com/) and [Twitter](https://indexcoop.com/).
 
-## About Push Protocol
+### About Push Protocol
 
 Push is the communication protocol of web3. Push protocol enables cross-chain notifications and messaging for dapps, wallets, and services tied to wallet addresses in an open, gasless, and platform-agnostic fashion. The open communication layer allows any crypto wallet /frontend to tap into the network and get the communication across.
 

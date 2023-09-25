@@ -30,14 +30,14 @@ The recent rebrand from EPNS to Push signals two evolutions from the service: th
 
 <center><b>.  .  .</b></center>
 
-## About Polygon
+### About Polygon
 [Polygon](https://polygon.technology/) is the leading blockchain development platform, offering scalable, affordable, secure, and sustainable blockchains for Web3. Its growing suite of products offers developers easy access to major scaling solutions including L2 (ZK Rollups and Optimistic Rollups), sidechains, hybrid, stand-alone, and enterprise chains, and data availability. Polygon’s scaling solutions have seen widespread adoption with 37,000+ decentralized applications hosted,1.94B+ total transactions processed, 164M+ unique user addresses, and $5B+ in assets secured. The network is home for some of the biggest Web3 projects such as Aave, Uniswap, OpenSea and well-known enterprises including Meta, Stripe, and Adobe. Polygon is carbon neutral with the goal of leading the Web3 ecosystem in becoming carbon negative.
 
 If you’re an Ethereum Developer, you’re already a Polygon developer! Leverage Polygon’s fast and secure txns for your dApp, get started [here](https://docs.polygon.technology/docs/develop/getting-started).
 
 [Website](https://polygon.technology/) | [Twitter](https://twitter.com/intent/user?screen_name=0xPolygon) | [Ecosystem Twitter](https://twitter.com/intent/user?screen_name=0xPolygonNews) | [Developer Twitter](https://twitter.com/intent/user?screen_name=0xPolygonDevs) | [Studios Twitter](https://twitter.com/intent/user?screen_name=polygonstudios) | [Telegram](https://t.me/polygonofficial) | [LinkedIn](https://www.linkedin.com/company/13449964/admin/) | [Reddit](https://www.reddit.com/r/0xpolygon/) | [Discord](https://discord.gg/XvpHAxZ) | [Instagram](https://www.instagram.com/0xpolygon/) | [Facebook](https://www.facebook.com/0xPolygon.Technology)
 
-## About Push Protocol
+### About Push Protocol
 
 Push is the communication protocol of web3. Push protocol enables cross-chain notifications and messaging for dapps, wallets, and services tied to wallet addresses in an open, gasless, and platform-agnostic fashion. The open communication layer allows any crypto wallet /frontend to tap into the network and get the communication across.
 

@@ -45,12 +45,12 @@ Stay tuned for more exciting developments from both Push and Cryptocurrency Jobs
 
 <center><b>.  .  .</b></center>
 
-## About Cryptocurrency Jobs
+### About Cryptocurrency Jobs
 Cryptocurrency Jobs curates the best new blockchain jobs at leading companies and startups that use blockchain technology. For protocols, this means greater exposure to a wider talent pool and for users, this means more access to a range of open positions in web3!
 
 Check out more about Cryptocurrency Jobs: [Website](https://cryptocurrencyjobs.co/), [Twitter](https://twitter.com/jobsincrypto).
 
-## About Push Protocol
+### About Push Protocol
 
 Push is the communication protocol of web3. Push protocol enables cross-chain notifications and messaging for dapps, wallets, and services tied to wallet addresses in an open, gasless, and platform-agnostic fashion. The open communication layer allows any crypto wallet /frontend to tap into the network and get the communication across.
 

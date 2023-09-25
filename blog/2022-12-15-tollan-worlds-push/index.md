@@ -76,10 +76,10 @@ We thank Michael for taking the time to speak with us. We’re excited to keep e
 
 <center><b>.  .  .</b></center>
 
-## About Tollan Worlds
+### About Tollan Worlds
 [Tollan Worlds](https://tollanworlds.com/) is a role-playing metaverse platform that aims at making the play-to-earn experience more accessible to the masses. Make friends, fight, build, and defend your home. Follow Tollan Worlds on [Twitter](https://twitter.com/TollanWorlds) and join [Discord](https://discord.com/invite/tollan).
 
-## About Push Protocol
+### About Push Protocol
 
 Push is the communication protocol of web3. Push protocol enables cross-chain notifications and messaging for dapps, wallets, and services tied to wallet addresses in an open, gasless, and platform-agnostic fashion. The open communication layer allows any crypto wallet /frontend to tap into the network and get the communication across.
 

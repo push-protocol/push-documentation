@@ -30,7 +30,7 @@ We are enthralled by the possibilities of this association with Reef Chain and h
 
 <center><b>.  .  .</b></center>
 
-## About Reef
+### About Reef
 Reef is an EVM-first blockchain designed to make Web3 accessible for the next billion users. Reef offers high scalability, and affordable transactions, and utilizes Nominated Proof of Stake, extensible EVM, and on-chain upgradability. Reef is the future blockchain for NFTs, DeFi, and gaming. It can easily accommodate the needs of the future of Web3 development. Reef is an ideal blend of old and new, a trait that makes it eternal and timeless.
 
 🌎 Website: https://reef.io
@@ -47,7 +47,7 @@ Reef is an EVM-first blockchain designed to make Web3 accessible for the next bi
 
 
 
-## About Push Protocol
+### About Push Protocol
 
 Push is the communication protocol of web3. Push protocol enables cross-chain notifications and messaging for dapps, wallets, and services tied to wallet addresses in an open, gasless, and platform-agnostic fashion. The open communication layer allows any crypto wallet /frontend to tap into the network and get the communication across.
 

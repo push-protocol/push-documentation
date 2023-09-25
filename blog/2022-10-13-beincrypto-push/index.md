@@ -32,14 +32,14 @@ As BeInCrypto continues to provide readers with only the highest-quality content
 
 <center><b>.  .  .</b></center>
 
-## About BeInCrypto
+### About BeInCrypto
 [BeInCrypto](https://beincrypto.com/) is a news website founded in August 2018 that specializes in cryptographic technology, privacy, fintech, and the Internet — among other related topics. The primary goal of the website is to inject transparency into an industry rife with disingenuous reporting, unlabeled sponsored articles, and paid news masquerading as honest journalism.
 
 Since founding the website, the team has grown significantly to incorporate some of the brightest technology-media professionals.
 
 
 
-## About Push Protocol
+### About Push Protocol
 
 Push is the communication protocol of web3. Push protocol enables cross-chain notifications and messaging for dapps, wallets, and services tied to wallet addresses in an open, gasless, and platform-agnostic fashion. The open communication layer allows any crypto wallet /frontend to tap into the network and get the communication across.
 

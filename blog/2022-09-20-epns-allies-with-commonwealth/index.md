@@ -35,13 +35,13 @@ We’re pleased to collaborate with Commonwealth on their journey towards bringi
 
 <center><b>.  .  .</b></center>
 
-## About Commonwealth
+### About Commonwealth
 Commonwealth is a governance and community management protocol. The protocol enables users to claim and govern their communities. Anyone can create a community, link their governance methodology, and discuss the future of their specific community.
 
 Stay in touch! [Website](https://commonwealth.im/), [Docs](https://docs.commonwealth.im/commonwealth/), [Twitter](https://twitter.com/hicommonwealth)
 
 
-## About Push Protocol
+### About Push Protocol
 
 Push is the communication protocol of web3. Push protocol enables cross-chain notifications and messaging for dapps, wallets, and services tied to wallet addresses in an open, gasless, and platform-agnostic fashion. The open communication layer allows any crypto wallet /frontend to tap into the network and get the communication across.
 

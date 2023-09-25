@@ -55,13 +55,13 @@ Great questions, Anoton! Let’s talk about it on your pod in Jan :) And thank y
 
 <center><b>.  .  .</b></center>
 
-## About Mover
+### About Mover
 Mover is a DeFi savings account that allows users to trade, store, send, and earn interest on their crypto in a simple wallet with a debit card.
 
 To learn more about Mover: [Website](https://viamover.com/), [Twitter](https://twitter.com/viaMover), [Telegram](https://t.me/viaMover), [GitHub](https://github.com/viamover).
 
 
-## About Push Protocol
+### About Push Protocol
 
 Push is the communication protocol of web3. Push protocol enables cross-chain notifications and messaging for dapps, wallets, and services tied to wallet addresses in an open, gasless, and platform-agnostic fashion. The open communication layer allows any crypto wallet /frontend to tap into the network and get the communication across.
 
