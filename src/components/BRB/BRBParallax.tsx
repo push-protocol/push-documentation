@@ -11,12 +11,13 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import styled from 'styled-components';
 
 // Internal Components
-import { SpanV2 } from '@site/src/components/SharedStylingV2';
+
+import { ImageV2, ItemVV2, SpanV2 } from '@site/src/components/SharedStylingV2';
 import useMediaQuery from '@site/src/hooks/useMediaQuery';
 
 // Import Assets
-import ParallaxBRB from '@site//static/assets/Grouped.svg';
-import ParallaxBRBMobile from '@site/static/assets/GroupedMobile.svg';
+import ParallaxBRB from '@site/static/assets/website/brb/mainbg.svg';
+import ParallaxBRBMobile from '@site/static/assets/website/brb/mainbgmobile.svg';
 
 // Internal Configs
 import { device } from '@site/src/config/globals';
@@ -99,42 +100,44 @@ function BRBParallax() {
           isMobile={isMobile}
           className="firstBackground"
         >
-          <SpanV2
-            fontSize={isMobile ? '50px' : '40px'}
-            fontFamily="Glancyr !important"
-            fontWeight={300}
-            letterSpacing="inherit"
-            color="#E64DE9"
-            // margin={isMobile ? '15.5em 0 0 0' : '202px 0 0 0'}
-            margin={isMobile ? '25% 0 0 0' : '5% 0 0 0'}
+
+          <ParallaxBRBBG>
+            {isMobile && 
+              <ImageV2
+                src={require(`@site/static/assets/website/brb/mainbgmobile.webp`).default}
+                srcSet={`${require(`@site/static/assets/website/brb/mainbgmobile@2x.webp`).default} 2x, ${require(`@site/static/assets/website/brb/mainbgmobile@3x.webp`).default} 3x`}
+                alt="Mobile main background image for Billion Reasons to Build website (#BRBIndia)"
+              />
+            }
+            {!isMobile &&
+              <ParallaxBRB />
+            }
+          </ParallaxBRBBG>
+          
+          <ParallaxHeader
+            isMobie={isMobile}
           >
             #BRBIndia
-          </SpanV2>
+          </ParallaxHeader>
 
           <ParallaxFlex>
             {Stats.map((item, i) => (
               <FlexItem key={i}>
-                <SpanV2
-                  fontSize={isMobile ? '80px' : '65px'}
-                  fontFamily="Glancyr !important"
-                  textAlign="center"
-                  fontWeight="600"
-                  color="#fff"
-                  lineHeight="inherit"
-                >
+                <ParallelFlexTitle>
                   {item.figure}
-                </SpanV2>
+                </ParallelFlexTitle>
 
-                <SpanV2
+                <ParallelFlexBody
                   fontSize={isMobile ? '18px' : '14px'}
-                  fontFamily="Glancyr !important"
+                  fontFamily="'Monaco', Tahoma, sans-serif"
                   color="#fff"
                   textAlign="center"
                   letterSpacing="0.03em"
                   lineHeight="inherit"
                 >
                   {item.body}
-                </SpanV2>
+
+                </ParallelFlexBody>
               </FlexItem>
             ))}
           </ParallaxFlex>
@@ -180,10 +183,6 @@ const FirstBackground = styled.div`
   height: 100%;
   margin: 0px auto;
 
-  background-image: ${(props) => (props.isMobile ? `url(${ParallaxBRBMobile})` : `url(${ParallaxBRB})`)};
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
 
   display: flex;
   flex-direction: column;
@@ -193,6 +192,30 @@ const FirstBackground = styled.div`
   @media ${device.mobileL} {
     width: 100%;
   }
+`;
+
+
+const ParallaxBRBBG = styled(ItemVV2)`
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  & svg {
+    width: 100%;
+    height: auto;
+  }
+`
+
+const ParallaxHeader = styled(SpanV2)`
+  font-size: ${(props) => (props.isMobile ? '50px' : '40px')};
+  font-weight: 900;
+  letter-spacing: inherit;
+  color: #E64DE9;
+  margin: ${(props) => (props.isMobile ? '25% 0 0 0' : '5% 0 0 0')};
+  font-stretch: ultra-expanded;
 `;
 
 const ParallaxFlex = styled.div`
@@ -228,5 +251,18 @@ const FlexItem = styled.div`
     margin: 10px 0;
   }
 `;
+
+
+const ParallelFlexTitle = styled(SpanV2)`
+  font-size: ${(props) => (props.isMobile ? '80px' : '65px')};
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+  line-height: inherit;
+`
+
+const ParallelFlexBody = styled(SpanV2)`
+  
+`
 
 export default BRBParallax;
